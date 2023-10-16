@@ -1,10 +1,15 @@
-export type Question = {
-  id: string;
+
+export type PrimaryQuestion = {
   title: string;
-  questions: Question[];
+  secondaryQuestions?: SecondaryQuestion[];
 }
 
-export type Form = {
+export type SecondaryQuestion = {
   id: string;
-  questions: Question[];
+  secondaryTitle: string;
+  tertiaryQuestions?: TertiaryQuestion[];
+}
+
+export type TertiaryQuestion = {
+  tertiaryTitle: string;
 }
