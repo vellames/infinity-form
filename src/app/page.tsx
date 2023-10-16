@@ -23,7 +23,7 @@ export default function Home() {
   }
 
   // aqui é tudo relacionado a secundaria
-  const [secondaryTitle, setSecondaryTitle] = useState("");
+  const [secondaryTitle, setSecondaryTitle] = useState(""); // transformar em array e usar individualmente nos inputs pra resolver o bug
   const oSecondaryTitleChanged = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSecondaryTitle(e.target.value);
   }
@@ -39,7 +39,7 @@ export default function Home() {
   }
 
   // aqui é tudo relacionado a tercearia
-  const [tertiaryTitle, setTertiaryTitle] = useState("");
+  const [tertiaryTitle, setTertiaryTitle] = useState(""); // transformar em array e usar individualmente nos inputs pra resolver o bug
   const onTertiaryTitleChanged = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTertiaryTitle(e.target.value);
   }
