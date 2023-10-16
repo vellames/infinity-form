@@ -84,6 +84,10 @@ export default function Home() {
     setQuestionTitle(e.target.value);
   }
 
+  useEffect(() => {
+    console.log(form.questions)
+  }, [form])
+
   return (
     <main className={styles.main}>
       <div>
